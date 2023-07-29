@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+
+    <EditText
+        android:id="@+id/etMonedaIntroducida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="85dp"
+        android:hint="Ingresa la cantidad a convertir en Euros:"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMonedaIntroducida"
+        android:layout_marginTop="50dp"
+        android:text="Resultado: "
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResultado"
+        android:layout_marginTop="50dp"
+        android:onClick="btConvertir"
+        android:background="@color/colorPrimary"
+        android:text="Convertir"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
